@@ -1,0 +1,37 @@
+{
+  "name": "purple-dot-js",
+  "version": "0.1.0",
+  "description": "An ES module wrapper for the purpledot.js SDK",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "test:unit": "npx jest",
+    "lint": "npx eslint src/",
+    "lint:fix": "npm run lint -- --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purple-dot/purple-dot-js.git"
+  },
+  "author": "Purple Dot",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/purple-dot/purple-dot-js/issues"
+  },
+  "homepage": "https://github.com/purple-dot/purple-dot-js#readme",
+  "keywords": [
+    "purple dot",
+    "purpledot"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-jest": "^26.3.0",
+    "eslint": "^7.9.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^24.0.2",
+    "jest": "^26.4.2",
+    "webpack": "^4.44.2"
+  }
+}
