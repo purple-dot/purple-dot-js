@@ -4,8 +4,7 @@ module.exports = {
   entry: path.resolve(__dirname, 'src/index.js'),
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: 'purple-dot.js',
-    library: 'purple-dot',
+    filename: 'index.js',
   },
   target: 'web',
   mode: 'production',
