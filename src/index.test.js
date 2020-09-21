@@ -9,7 +9,7 @@ describe('loadPurpleDot()', () => {
   });
 
   it('injects the script', async () => {
-    const loadPurpleDot = require('./index').default;
+    const { loadPurpleDot } = require('./index');
     loadPurpleDot();
 
     await Promise.resolve(); // Wait a tick
@@ -22,7 +22,7 @@ describe('loadPurpleDot()', () => {
   it('does not inject the script if PurpleDot is already loaded', async () => {
     window.PurpleDot = {};
 
-    const loadPurpleDot = require('./index').default;
+    const { loadPurpleDot } = require('./index');
     loadPurpleDot();
 
     await Promise.resolve(); // Wait a tick
@@ -33,7 +33,7 @@ describe('loadPurpleDot()', () => {
   });
 
   it('does not inject the script twice', async () => {
-    const loadPurpleDot = require('./index').default;
+    const { loadPurpleDot } = require('./index');
     loadPurpleDot();
     loadPurpleDot();
 

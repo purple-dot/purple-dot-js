@@ -4,9 +4,9 @@
   "description": "An ES module wrapper for the purpledot.js SDK",
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -r dist/ && npx webpack",
+    "build": "rm -rf dist/ && npx webpack",
     "test": "npm run lint && npm run test:unit",
-    "test:unit": "npx jest",
+    "test:unit": "npx jest src/",
     "lint": "npx eslint src/",
     "lint:fix": "npm run lint -- --fix",
     "publish": "npm build && npm publish --access public"
@@ -31,6 +31,7 @@
     "babel-jest": "^26.3.0",
     "eslint": "^7.9.0",
     "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-cypress": "^2.11.1",
     "eslint-plugin-import": "^2.22.0",
     "eslint-plugin-jest": "^24.0.2",
     "jest": "^26.4.2",

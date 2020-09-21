@@ -58,9 +58,8 @@ const loadScript = () => {
   return purpleDotPromise;
 };
 
-const loadPurpleDot = () => Promise
+/* eslint-disable-next-line import/prefer-default-export */
+export const loadPurpleDot = () => Promise
   .resolve()
   .then(() => loadScript())
   .catch((err) => console.warn(err));
-
-export default loadPurpleDot;
