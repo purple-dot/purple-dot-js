@@ -32,6 +32,19 @@ describe('loadPurpleDot()', () => {
     ).toBe(null);
   });
 
+  it('does not inject the script if the script is already present', async () => {
+    document.head.innerHTML = '<script src="https://www.purpledotprice.com/api/v1/purpledot.js" async></script>';
+
+    const { loadPurpleDot } = require('./index');
+    loadPurpleDot();
+
+    await Promise.resolve(); // Wait a tick
+
+    expect(
+      document.querySelectorAll('script[src="https://www.purpledotprice.com/api/v1/purpledot.js"]').length,
+    ).toBe(1);
+  });
+
   it('does not inject the script twice', async () => {
     const { loadPurpleDot } = require('./index');
     loadPurpleDot();
