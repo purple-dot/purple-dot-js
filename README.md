@@ -23,6 +23,7 @@ page and load it. When called in a server environment it returns `null`.
 ```javascript
 import { loadPurpleDot } from '@purple-dot/purple-dot-js';
 
+// Injects the script and loads the SDK
 const purpleDot = await loadPurpleDot();
 
 // Use the SDK as usual
