@@ -104,3 +104,5 @@ dist
 .tern-port
 
 e2e/www/index.js
+e2e/cypress/videos/*
+e2e/cypress/screenshots/*
