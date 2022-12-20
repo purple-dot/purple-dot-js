@@ -1,6 +1,6 @@
 # PurpleDot.js SDK ES Module
 
-An ES module wrapper for the [purpledot.js SDK](https://www.purpledotprice.com/docs/reference/javascript-sdk).
+An ES module wrapper for the [purpledot.js SDK](https://www.purpledotprice.com/docs/platform/reference/javascript-sdk).
 
 **Note:** This package wraps the PurpleDot object provided by the purpledot.js
 library and dynamically loads the underlying script. It does not bundle the full
