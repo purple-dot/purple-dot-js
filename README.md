@@ -1,32 +1,9 @@
 # PurpleDot.js SDK ES Module
 
-An ES module wrapper for the [purpledot.js SDK](https://www.purpledotprice.com/docs/platform/reference/javascript-sdk).
+An ES module wrapper for the Purple Dot JavaScript SDK.
 
-**Note:** This package wraps the PurpleDot object provided by the purpledot.js
-library and dynamically loads the underlying script. It does not bundle the full
-source code.
+The Purple Dot JavaScript SDK allows merchants to ship Purple Dot's platform integration into a Shopify Theme built with Liquid or a headless storefront built with something other than ReactJS.
 
-## Installation
+Developer documentation can be found [here](https://docs.getpurpledot.com/docs/platform-integration-references/javascript-sdk).
 
-```
-npm install @purple-dot/purple-dot-js
-```
-
-## Usage
-
-### `loadPurpleDot`
-
-This function returns a promise that resolves with the `PurpleDot` object
-provided by the SDK. If not included already, it will inject the script tag into your
-page and load it. When called in a server environment it returns `null`.
-
-```javascript
-import { loadPurpleDot } from '@purple-dot/purple-dot-js';
-
-// Injects the script and loads the SDK
-const purpleDot = await loadPurpleDot();
-
-// Use the SDK as usual
-purpleDot.init({ apiKey: '5f6b6189-5380-423d-8f59-6c34eb61bbff' });
-purpleDot.load({ placementType: 'button' });
-```
+For more information on Purple Dot visit <https://www.getpurpledot.com>.
