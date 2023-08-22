@@ -1,10 +1,9 @@
----
-
-### :warning: Deprecation Notice :warning:
+### :warning:
+### Deprecation Notice
 
 **This package is now deprecated.** Please read [http://bit.ly/47JtIk0](http://bit.ly/47JtIk0) to learn how to integrate Purple Dot into your Shopify storefront.
 
----
+#
 
 # PurpleDot.js SDK ES Module
 
